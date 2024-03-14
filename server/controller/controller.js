@@ -5,9 +5,9 @@ import blankUserData from "../models/userdata.js";
 import websiteMetaData from "../models/metaData.js";
 import axios from 'axios';
 import PaytmChecksum from 'paytmchecksum';
-var mid = "RtZYvX44163568075252"    
-var key = "4vnQO9l9aHZzM1X%"
-var mobileNo = "8933066862"
+var mid = ""  // Enter Paytm MID here
+var key = "" // Enter Paytm Key here
+var mobileNo = "" // Enter Mobile Number here
 
 export const uploadImage = async (request, response) => {
     const fileObj = {
