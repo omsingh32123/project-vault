@@ -1,0 +1,12 @@
+# Edit button ka ek EDIT PROPERTY Page banana hai.
+# Hompage List me exactly kon si listings show krni hai ?
+  - Active
+  - Inactive
+  - Quality Checked Pass
+  - Quality Checked Fail
+  - Agent Connected
+  - All
+# Drawer me ek LISTINGS page banana hai, jisme types of listing show hoengi
+# Listing click krne pe DETAILED PAGE banao
+# Drawer me ek AGENTS PAGE banao, jisme currently saare agents listed ho 
+  jinko waha se jake call ya mssg bhi kr skte ho 
