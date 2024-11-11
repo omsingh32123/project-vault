@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const DBconnection = async () => {
-    const MONGO_URL = `mongodb+srv://omsingh32123:MongoDBPassword@projectvault.lf71zkd.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGO_URL = process.env.MONGO_URL;
     try{
         await mongoose.connect(MONGO_URL,{useNewUrlParser: true});
         console.log('Database Connected Successfully');

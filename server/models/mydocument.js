@@ -16,6 +16,10 @@ const myDocumentSchema = new mongoose.Schema({
         type: String,
         required: true 
     },
+    projectlink: {
+        type: String,
+        default: ""
+    },
     domain: {
         type: String,
         required: true 
@@ -25,11 +29,9 @@ const myDocumentSchema = new mongoose.Schema({
         required: true,
         default: 0 
     },
-    rating: {
-        type: Number,
-        required: true,
-        default: 0 
-    },
+    downloads: [{
+        type: String,
+    }],
     date: {
         type: Date,
         default: Date.now, 
@@ -45,6 +47,17 @@ const myDocumentSchema = new mongoose.Schema({
         value: {
             type: String,
             required: true
+        }
+    }],
+    rating: [{
+        email: {
+            type: String,
+            required: true
+        },
+        rate: {
+            type: Number,
+            required: true,
+            default: 0 
         }
     }]
 });
